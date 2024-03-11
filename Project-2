@@ -1,0 +1,29 @@
+1. Adım: Diziyi ikiye bölün:
+
+Sol alt dizi: [16, 21]
+Sağ alt dizi: [11, 8, 12, 22]
+2. Adım: Her iki alt diziyi de kendi içinde tekrarlayın (bölme işlemi en küçük alt dizilere kadar devam eder):
+
+Sol alt dizi:
+[16]
+[21]
+Sağ alt dizi:
+[11]
+[8]
+[12, 22]
+3. Adım: Bölünmüş alt dizileri sıralı şekilde birleştirin:
+
+Sol alt dizi: [16, 21]
+
+Sağ alt dizi: [8, 11, 12, 22]
+
+Birleştirilmiş dizi: [8, 11, 12, 16, 21, 22]
+
+4. Adım: Kalan alt dizileri de birleştirin:
+
+Birleştirilmiş dizi: [8, 11, 12, 16, 21, 22]
+Sonuç:
+
+Dizi sıralandığında şu hale gelir: [8, 11, 12, 16, 21, 22]
+
+Big-o O(nlogn)
