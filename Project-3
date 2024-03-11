@@ -1,0 +1,26 @@
+
+Binary Search Tree - Aşamalar
+Dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+1. Adım: İlk elemanı (7) kökü olarak atayın.
+
+Kök: 7
+2. Adım: Kalan elemanları teker teker ekleyin:
+
+5: 7'den küçük olduğu için sol alt dala eklenir.
+1: 5'ten küçük olduğu için 5'in sol alt dalına eklenir.
+8: 7'den büyük olduğu için sağ alt dala eklenir.
+3: 7'den küçük olduğu için sol alt dala eklenir.
+6: 5'ten büyük olduğu için 5'in sağ alt dalına eklenir.
+0: 1'den küçük olduğu için 1'in sol alt dalına eklenir.
+9: 8'den büyük olduğu için 8'in sağ alt dalına eklenir.
+4: 8'den küçük olduğu için 8'in sol alt dalına eklenir.
+2: 1'den büyük olduğu için 1'in sağ alt dalına eklenir.
+3. Adım: Sonuç olarak, aşağıdaki binary search tree oluşur:
+         7
+       /   \
+      5     8
+     / \   / \
+    1   6  4   9
+   / \     
+  0   2
