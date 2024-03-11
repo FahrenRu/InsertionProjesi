@@ -1,0 +1,35 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+1-)Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
+
+2-) Big-O gösterimini yazınız.
+
+3-)Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+------------------------------------------------------------------------------------------------------------------------------------
+1-) Dizinin ilk elemanını (22) sıralı olarak kabul edelim
+    İkinci elemanı (27) sıralı eleman (22) ile karşılaştıralım.
+    27 sayısı 22'den büyük olduğu için 27 sayısını dizinin sonuna ekleyelim
+    Üçüncü (16) elemanı alalım ve sıralı elemanlarla (22) karşılaştıralım.
+    16 < 22 olduğu için 16'yı doğru konumuna yerleştirmek için sıralı elemanları birer birer sağa kaydırın.
+    Dizi şu hale geliyor: [22, 16, 27, 2, 18, 6]
+    Dördüncü elemanı (2) alın ve sıralı elemanlarla (22 ve 16) karşılaştırın.
+    2 < 16 olduğu için 2'yi doğru konumuna yerleştirmek için sıralı elemanları birer birer sağa kaydırın.
+    Dizi şu hale geliyor: [16, 22, 27, 2, 18, 6]
+    Bu işlemi dizideki tüm elemanlar sıralanana kadar tekrarlayalım.
+    Sonuç:
+    Dizi sıralandığında şu hale gelir: [2, 6, 16, 18, 22, 27]
+2-) O(n^2)
+3-) Verilen dizide [22, 27, 16, 2, 18, 6], 18 sayısı sıralandıktan sonra üçüncü sırada yer alır. Bu yüzden Best Case'e girer.
+--------------------------------------------------------------------------------------------------------------------------------------
+1-) [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+    1. Adım: Dizin en küçük elemanını bulmak için tüm elemanları karşılaştırın.
+    En küçük eleman 2'dir.
+    
+    2. Adım: En küçük elemanı dizinin ilk elemanı ile yer değiştirin.
+    Dizi şu şekilde olur: [2, 7, 5, 8, 3, 9, 4, 15, 6]
+    
+    3. Adım: Dizin kalan kısmında (ilk elemandan sonra) en küçük elemanını bulun.
+    Kalan dizideki en küçük eleman 3'tür.
+    
+    4. Adım: Bulunan en küçük elemanı dizinin ikinci elemanı ile yer değiştirin.
+    Dizi şu şekilde olur: [2, 3, 5, 8, 7, 9, 4, 15, 6]
